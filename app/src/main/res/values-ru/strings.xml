@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Конвертер</string>
+    <string name="common.retry">Повторить</string>
+    <string name="common.error.unknown">Не удалось получить курсы обмена. Проверьте ваше интернет подключение.</string>
+</resources>

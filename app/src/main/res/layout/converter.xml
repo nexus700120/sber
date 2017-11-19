@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ru.sber.widget.ProgressView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/progress_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <requestFocus />
+
+        <TextView
+            android:id="@+id/outgoing_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            tools:text="USD" />
+
+        <ru.sber.widget.money.MoneyEditText
+            android:id="@+id/money_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@null"
+            android:fontFamily="sans-serif-light"
+            android:gravity="end"
+            android:hint="0"
+            android:inputType="numberDecimal"
+            android:minWidth="100dp"
+            android:textColorHint="@color/text_primary"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText,RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/outgoing_currency"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rate_background"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            tools:text="1 $  =  63.0437 ₽" />
+
+        <TextView
+            android:id="@+id/incoming_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rate"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.3"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:text="RUB"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/incoming_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/rate"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.3"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            tools:text="0" />
+    </RelativeLayout>
+</ru.sber.widget.ProgressView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="common.retry">Retry</string>
+    <string name="common.error.unknown">Could not get exchange rates. Check your internet connection.</string>
+</resources>
